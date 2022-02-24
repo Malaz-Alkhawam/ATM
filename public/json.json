@@ -1,0 +1,82 @@
+// addProduct
+{
+    "name": "productName",
+    "image": "productImage",
+    "type": "productType",
+    "quantity": 12,
+    "communicationInfo": "gmail@gmail",
+    "endDate": "12/12/2012",
+    "userId": 2,
+    "price": [
+        {
+            "price": 555,
+            "period": 555,
+            "discountPercentage": "30%" //                {
+        }, // response  =>     "message": "added successfuly"
+        { //                }
+            "price": 555,
+            "period": 555,
+            "discountPercentage": "30%"
+        },
+        {
+            "price": 555,
+            "period": 555,
+            "discountPercentage": "30%"
+        },
+    ]
+}
+// getProducts
+[
+    {
+        "name": "productName",
+        "image": "productImage",
+        "type": "productType",
+        "quantity": 12,
+        "communicationInfo": "gmail@gmail",
+        "endDate": "12/12/2012",
+        "userId": 2,
+        "price": [
+            {
+                "price": 555,
+                "discountPercentage": "30%",
+            },
+            {
+                "price": 555,
+                "discountPercentage": "30%",
+            },
+            {
+                "price": 555,
+                "discountPercentage": "30%",
+            },
+        ]
+    }
+]
+
+
+
+loginUser
+{ //                       {
+    "name": "ahmad", //                          "id":1,
+    "password": "password" // response  =>             "name":"ahmad",
+    //                          "image":"image"
+} //                       }
+
+signUp
+{ //                       {
+    "name": "ahmad", //                          "id":1,
+    "password": "password", // response  =>             "name":"ahmad",
+    "image": "image" //                          "image":"image"
+} //                       }
+
+addComment
+{
+    "userId": 2, //                {
+    "productId": 3, //   response  =>  "message": "added successfuly"
+    "comment": "comment content" //                }
+}
+
+addLike
+{ //               {
+    "userId": 2, //  response  =>  "message": "added successfuly"
+    "productId": 3 //               }
+}
